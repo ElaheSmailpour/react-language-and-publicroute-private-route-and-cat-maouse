@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import ChangeLanguage from "./components/Language"
+import ChangeLanguage from "./pages/Language"
 import Home from '../src/pages/Home';
 import Login from '../src/pages/Login';
 import Admin from '../src/pages/Admin';
