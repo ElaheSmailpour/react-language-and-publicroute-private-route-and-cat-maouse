@@ -1,12 +1,7 @@
 import React from 'react';
 
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-// import Display1 from './components/Display1';
-// import Display2 from './components/Display2';
-// import Display3 from './components/Display3';
-// import ChangeLanguage from './components/Language';
-// import Minus from './components/Minus';
-// import Pluser from './components/Pluser';
+import ChangeLanguage from "./components/Language"
 import Home from '../src/pages/Home';
 import Login from '../src/pages/Login';
 import Admin from '../src/pages/Admin';
@@ -29,6 +24,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => <Redirect to={"/home"}></Redirect >} />
         <Route path="/home" component={Home} />
+        <Route path="/lan" component={ChangeLanguage} />
         <PublicRoute path="/login" component={Login} ></PublicRoute>
         <PrivateRoute path="/admin" Component={Admin} ></PrivateRoute>
       </Switch>
